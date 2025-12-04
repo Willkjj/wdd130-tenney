@@ -1,1 +1,90 @@
 @import url("./style.css");
+:root {
+  --primary-color: #0a2342; 
+  --secondary-color: #848fa5;
+  --primary-accent: #6a041d;
+  --secondary-accent: #e0efde;
+}
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    p {
+        font-family: Farsan;
+    }
+}
+.heading {
+  margin: 1% 40%;
+  text-align: center;
+  background-color: var(--primary-color);
+  border-radius: 25px;
+  height: 80px;
+  line-height: 80px;
+  color: var(--secondary-color);
+  font-family: "Black Ops One";
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+}
+main p {
+    margin: 1% 20%;
+    padding: 1%;
+    background-color: var(--primary-color);
+    border-radius: 25px;
+    text-align: center; 
+    color: var(--secondary-color);
+}
+#grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 150px;
+    padding: 2%;
+    column-gap: 2%;
+}
+.gheading {
+    /* grid heading */
+  margin: 1% auto;
+  text-align: center;
+  background-color: var(--primary-color);
+  border-radius: 25px;
+  height: 80px;
+  width: 50%;
+  line-height: 80px;
+  color: var(--secondary-color);
+  font-family: "Black Ops One";
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+}
+.auto {
+    margin: auto;
+    width: 60%;
+    height: 40%;
+}
+#mom {
+    grid-column: 1/1;
+    width: 100%;
+}
+#sock {
+    margin: auto;
+    grid-column: 2/2;
+    grid-row: 1/1;
+    width: 100%;
+}
+#idaho {
+    margin: auto;
+    grid-column: 3/3;
+    grid-row: 1/1;
+    width: 100%;
+}
+#mom:hover, #sock:hover, #idaho:hover {
+    transform: scale(1.15);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
